@@ -17,9 +17,6 @@ body {
     height: 100%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-@media(max-width: 480px) {
-    over-flow: hidden;
-}
 a {
     color: white;
     text-decoration: none;
