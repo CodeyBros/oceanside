@@ -19,6 +19,7 @@ body {
 }
 @media(max-width: 480px) {
     over-flow: hidden;
+}
 a {
     color: white;
     text-decoration: none;
