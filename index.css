@@ -81,6 +81,7 @@ ul {
     justify-content: space-between;
     padding: 3px 0;
     margin: 5px 8px;
+    width: 98%;
 }
 @media(max-width: 800px) {
     .preheader {
@@ -90,7 +91,7 @@ ul {
         justify-content: space-between;
         padding: 3px 0;
         margin: 4px 6px;
-
+        width: 98%;
     }
 }
 @media(max-width: 500px) {
@@ -101,7 +102,7 @@ ul {
         justify-content: space-between;
         padding: 3px 0;
         margin: 4px 6px;
-
+        width: 98%;
     }
 }
 
