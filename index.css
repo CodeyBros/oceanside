@@ -1,0 +1,336 @@
+body {
+    margin: 0 0;
+    padding: 0 0;
+}
+
+
+/* Container */
+.container {
+    margin: 0 0;
+    padding: 5px 0;
+    background-image: url(bg/stories-8b8k6AsNY6c-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+    width: 100%;
+    height: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+}
+ul {
+    list-style: none;
+}
+
+/* Utilities */
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 5px;
+    row-gap: 5px;
+    align-items: center;
+    text-align: center;
+}
+@media(max-width: 960px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 5px;
+        row-gap: 5px;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media(max-width: 600px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5px;
+        row-gap: 5px;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media(max-width: 480px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 5px;
+        row-gap: 5px;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+/* Preheader  */
+.preheader {
+    height: 15px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 0;
+    margin: 5px 8px;
+}
+@media(max-width: 800px) {
+    .preheader {
+        font-size: 12px;
+        height: 12px;
+        display: flex;
+        justify-content: space-between;
+        padding: 3px 0;
+        margin: 4px 6px;
+
+    }
+}
+@media(max-width: 500px) {
+    .preheader {
+        font-size: 8px;
+        height: 10px;
+        display: flex;
+        justify-content: space-between;
+        padding: 3px 0;
+        margin: 4px 6px;
+
+    }
+}
+
+
+/* Header */
+header {
+    background-color: rgba(255, 0, 0, 0.189);
+    color: white;
+    padding: 3px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-menu ul a {
+    padding: 7px 5px;
+}
+.navbar-menu ul a:hover {
+    color: red;
+    border-bottom: 3px solid black;
+}
+@media(max-width: 800px) {
+
+}
+
+
+
+/* Main welcome */
+.main {
+    margin-top: 75px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 50px;
+    
+}
+.main .welcome h1 {
+    font-family: 'Dancing Script';
+    font-size: 55px;
+    font-weight: bolder;
+}
+.main .motto h3 {
+    font-family: 'Raleway';
+    font-size: 15px;
+}
+.redcolor {
+    color: red;
+}
+
+@media(max-width: 600px) {
+    .main {
+        margin-top: 55px;
+        margin-bottom: 40px;
+    }
+    .main .welcome h1 {
+        font-family: 'Dancing Script';
+        font-size: 40px;
+        font-weight: bolder;
+    }
+    .main .motto h3 {
+        font-family: 'Raleway';
+        font-size: 10px;
+    }
+}
+
+
+
+
+/* Booking */
+.bookings {
+    display: flex;
+    margin-top: 100px;
+}
+input {
+     width: 80%;
+     margin: 5px 0;
+ }
+.reservation {
+    background: rgba(255, 0, 0, 0.217);
+    padding: 5px 5px;
+    margin: 5px 10px;
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.reservation form {
+    padding: 3px;
+}
+.booking input {
+    margin: 5px;
+    height: 18px;
+}
+#submit1 button {
+    background-color: black;
+    height: 25px;
+    border-radius: 10px;
+    padding: 5px;
+}
+#submit1 a {
+    color: red;
+}
+
+
+
+/* Online-order */
+.online-order {
+    background: rgba(255, 0, 0, 0.217);
+    padding: 5px 5px;
+    margin: 5px 10px;
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+.online-order select {
+    margin: 5px;
+    height: 18px;
+}
+#submit2 button {
+    background-color: black;
+    height: 25px;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 5px;
+}
+#submit2 a {
+    color: red;
+}
+@media(max-width: 900px) {
+    .bookings {
+        display: inline-block;
+        margin-top: 100px;
+        width: 95%;
+    }
+    input {
+        width: 95%;
+        margin: 5px 0;
+    }
+   .reservation {
+    background: rgba(255, 0, 0, 0.217);
+    padding: 5px 5px;
+    margin: 5px 10px;
+    text-align: center;
+    width: 100%;
+    float: none;
+   }
+   .reservation form {
+       padding: 3px;
+   }
+   .booking input {
+       margin: 5px;
+       height: 18px;
+   }
+   .online-order {
+    background: rgba(255, 0, 0, 0.217);
+    padding: 5px 5px;
+    margin: 5px 10px;
+    text-align: center;
+    width: 100%;
+    float: none;
+   }
+    .online-order select {
+    margin: 5px;
+    height: 18px;
+    }
+}
+@media(max-width: 500px) {
+    .bookings {
+        display: inline-block;
+        margin-top: 100px;
+        width: 90%;
+    }
+    input {
+        width: 90%;
+        margin: 5px 0;
+    }
+   .reservation {
+    background: rgba(255, 0, 0, 0.217);
+    padding: 5px 5px;
+    margin: 5px 10px;
+    text-align: center;
+    width: 100%;
+    float: none;
+   }
+   .reservation form {
+       padding: 3px;
+   }
+   .booking input {
+       margin: 5px;
+       height: 18px;
+   }
+   .online-order {
+    background: rgba(255, 0, 0, 0.217);
+    padding: 5px 5px;
+    margin: 5px 10px;
+    text-align: center;
+    width: 100%;
+    float: none;
+   }
+    .online-order select {
+    margin: 5px;
+    height: 18px;
+    }
+}
+
+
+
+/* Menu Container*/
+.menu-container {
+    padding:3px 5px;
+    margin: 5px 10px;
+    margin-top: 30px;
+    color: white;
+    border: 3px solid rgba(255, 0, 0, 0.368);
+}
+.menu-container h3 {
+    color: red;
+    margin: 20px 0;
+}
+.menu button {
+    background-color: white;
+    height: 25px;
+    border-radius: 10px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+
+}
+.menu a {
+    color: red;
+}
+.menu img {
+    border-radius: 50%;
+    width: 75%;
+    height: 200px;
+}
