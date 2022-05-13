@@ -133,7 +133,7 @@ header {
 @media (max-width:41rem) {
     .navbar-menu ul li{
         display: flex;
-        flex-direction: column;
+        flex-direction: row-reverse;
     }
 }
 
