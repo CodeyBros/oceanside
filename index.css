@@ -32,6 +32,7 @@ ul {
 .flex {
   display: flex;
   justify-content: center;
+  margin-right: 1rem;
 }
 .grid {
   display: grid;
@@ -61,10 +62,10 @@ ul {
     text-align: center;
   }
 
-  .container{
-      background-size: cover;
-      width: 100vw;
-      overflow-x: hidden;
+  .container {
+    background-size: cover;
+    width: 100vw;
+    overflow-x: hidden;
   }
 }
 @media (max-width: 480px) {
@@ -88,15 +89,14 @@ ul {
   margin: 5px 8px;
   width: 98%;
 }
-@media (max-width: 800px) {
+@media (min-width: 502px) {
   .preheader {
     font-size: 12px;
     height: 12px;
     display: flex;
-    justify-content: center;
-    padding: 3px 0;
-    margin: 4px 6px;
-    width: 98%;
+    justify-content: space-between;
+    margin-inline: auto;
+    width: 80%;
   }
 }
 @media (max-width: 500px) {
@@ -104,11 +104,57 @@ ul {
     font-size: 8px;
     height: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding: 3px 0;
-    margin: 4px 6px;
-    width: 98%;
+    margin-inline: auto;
+    width: 80%;
   }
+}
+
+@media (max-width: 350px) {
+  .preheader {
+    font-size: 8px;
+    margin-inline: auto;
+    width: 80%;
+  }
+}
+
+@media (max-width: 720px) {
+
+       .navbar-menu{
+        flex-direction: column;
+        position: absolute;
+        right: 7px;
+        /* background: rgba(255, 0, 0, 0.3); */
+        border-radius: 5px;
+        width: 100%;
+        height: 100vh;
+        text-align: right;
+        padding-right: 2rem;
+    } 
+
+    .navbar-menu ul li{
+      display: flex;
+      flex-direction: column;
+    }
+
+
+    .show-menu{
+      display: flex;
+      flex-direction: column;
+    }
+    ul{
+      display: none;
+    }
+
+
+
+    .lines{
+      width: 33px;
+      height: 2px;
+      background: white;
+      margin: 0.5rem;
+    }
 }
 
 /* Header */
@@ -127,27 +173,9 @@ header {
   color: red;
   border-bottom: 3px solid black;
 }
-@media (max-width: 800px) {
-}
 
-@media (max-width: 41rem) {
-  .navbar-menu ul li {
-    display: flex;
-    flex-direction: column;
-  }
-}
 
-@media (max-width: 350px) {
-  .preheader {
-    font-size: 8px;
-    /* height: 10px; */
-    display: flex;
-    justify-content: center;
-    padding: 5px 0;
-    margin: 4px 6px;
-    /* width: 98%; */
-  }
-}
+
 
 /* Main welcome */
 .main {
