@@ -107,6 +107,18 @@ ul {
     }
 }
 
+@media(max-width: 350px) {
+    .preheader {
+        font-size: 8px;
+        /* height: 10px; */
+        display: flex;
+        /* justify-content: space-between; */
+        padding: 5px 0;
+        margin: 4px 6px;
+        /* width: 98%; */
+    }
+}
+
 
 /* Header */
 header {
@@ -128,6 +140,12 @@ header {
 
 }
 
+@media (max-width:41rem) {
+    .navbar-menu ul li{
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 
 /* Main welcome */
