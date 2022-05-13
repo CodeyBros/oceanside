@@ -135,19 +135,19 @@ header {
         display: flex;
         flex-direction: column;
     }
-    @media(max-width: 350px) {
-    .preheader {
-        font-size: 8px;
-        /* height: 10px; */
-        display: flex;
-        justify-content: center;
-        padding: 5px 0;
-        margin: 4px 6px;
-        /* width: 98%; */
-    }
-}
 }
 
+
+@media(max-width: 350px) {
+.preheader {
+    font-size: 8px;
+    /* height: 10px; */
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    margin: 4px 6px;
+    /* width: 98%; */
+}}
 
 /* Main welcome */
 .main {
